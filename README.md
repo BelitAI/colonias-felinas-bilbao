@@ -4,7 +4,7 @@
 IDEA DEL PROYECTO:
 
 **¿Qué es?**
-Los Guardianes de la Ciudad es un prototipo web de mobile first orientado al cuidado y control de las colonias felinas de Bilbao mediante el método CES (Captura, Esterilización y Suelta).
+Los Guardianes de la Ciudad es un prototipo web de mobile first orientado al cuidado y control de las colonias felinas de Bilbao mediante el método CER (Captura, Esterilización y Retorno).
 
 **¿A quién va dirigido?**
 Está dirigido a personas cuidadoras, asociaciones y ciudadanía interesada en colaborar con el bienestar de los gatos comunitarios. 
@@ -20,9 +20,9 @@ Explicación de las vistas creadas y cómo se navega entre ellas.
 La página de inicio es dónde se explica qué son las colonias felinas, cuál es el objetivo de Los Guardianes de la Ciudad y qué problema intenta resolver.
 
 * **colonias.html:** Descripción de esta segunda pantalla.
-Pantalla dedicada al seguimiento de las colonias: ubicación, número de gatos, esterilizaciones, horarios de alimentación, adopciones e incidencias.
+Pantalla dedicada al seguimiento de las colonias: ubicación, número de gatos, esterilizaciones, horarios de alimentación, adopciones, incidencias y donaciones con formulario (pago.html) de pasarela de pago.
 
-* **avisar.html:** Descripción de esta tercera pantalla.s
+* **avisar.html:** Descripción de esta tercera pantalla.
 Pantalla con un formulario para comunicar incidencias, como un gato herido o enfermo, una nueva camada, falta de alimento u otras necesidades detectadas en una colonia como agresiones, envenenamiento o ataques a los gatos.
 
 ## Tecnologías Utilizadas
