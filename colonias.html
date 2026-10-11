@@ -55,10 +55,10 @@
             <p><strong>Incidencias:</strong> ninguna</p>
 
             <h3>Adopciones</h3>
-            <p>3 gatos disponibles para adopción.</p>
+            <p>3 gatos en adopción.</p>
 
             <img src="https://www.hortanoticias.com/wp-content/uploads/2017/10/colonia-de-gatos-de-Foios.jpg"
-                alt="Tres gatitos esperando ser adoptados">
+                alt="Tres gatitos esperando para ser adoptados">
 
             <a href="#donacion">Ayudar a esta colonia</a>
         </section>
@@ -67,8 +67,8 @@
         <section id="san-adrian" class="ficha-colonia">
             <h2>Colonia de los Guardianes de San Adrián</h2>
 
-            <img src="https://www.corella.es/wp-content/uploads/2021/08/gatos-esterilizacion-1.jpg"
-                alt="Colonia felina de Deusto">
+            <img src="https://estaticosgn-cdn.deia.eus/clip/fbd1245d-1257-4ba8-9d11-9445feb3c9e3_16-9-discover-aspect-ratio_default_0.jpg"
+                alt="Colonia felina de San Adrián">
 
             <p><strong>Ubicación:</strong> San Adrián</p>
             <p><strong>Número de gatos:</strong> 33</p>
@@ -77,10 +77,10 @@
             <p><strong>Incidencias:</strong> ataque a la colonia por envenenamiento</p>
 
             <h3>Adopciones</h3>
-            <p>0 gatos disponibles para adopción.</p>
+            <p>0 gatos en adopción.</p>
 
-            <img src="https://www.hortanoticias.com/wp-content/uploads/2017/10/colonia-de-gatos-de-Foios.jpg"
-                alt="Tres gatitos esperando ser adoptados">
+            <img src="https://static.eldiario.es/clip/ba1c56fb-deeb-4eb8-a835-48cf6774d86c_twitter-aspect-ratio_default_0.jpg"
+                alt="Gatos adultos de la colonia">
 
             <a href="#donacion">Ayudar a esta colonia</a>
         </section>
@@ -90,7 +90,7 @@
             <h2>Colonia de los Guardianes de Las Cortes</h2>
 
             <img src="https://www.corella.es/wp-content/uploads/2021/08/gatos-esterilizacion-1.jpg"
-                alt="Colonia felina de Deusto">
+                alt="Colonia felina de Las Cortes">
 
             <p><strong>Ubicación:</strong> Las Cortes</p>
             <p><strong>Número de gatos:</strong> 25</p>
@@ -99,10 +99,10 @@
             <p><strong>Incidencias:</strong> falta de cuidadores</p>
 
             <h3>Adopciones</h3>
-            <p>5 gatos disponibles para adopción.</p>
+            <p>11 gatos en adopción.</p>
 
-            <img src="https://www.hortanoticias.com/wp-content/uploads/2017/10/colonia-de-gatos-de-Foios.jpg"
-                alt="Tres gatitos esperando ser adoptados">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_YUQnHBxEn7a1XMjlF0S1jmjanNlOVGdC4UW_xbAXXVE6j-v8LfduXLg&s=10"
+                alt="Once gatitos esperando para ser adoptados">
 
             <a href="#donacion">Ayudar a esta colonia</a>
         </section>
@@ -110,12 +110,31 @@
         <!-- Formulario que llevaría a la pasarela de pago -->
         <section id="donacion">
             <h2>Ayuda a una colonia</h2>
-            <form>
-                <label for="nombre">Nombre</label>
-                <input type="text" id="nombre">
+            <form action="pago.html">
 
-                <label for="importe">Importe (€)</label>
-                <input type="number" id="importe" name="importe" min="1">
+                <div>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre">
+                </div>
+
+                <div>
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" name="email">
+                </div>
+
+                <div>
+                    <label for="colonia">Colonia</label>
+                    <select id="colonia" name="colonia">
+                        <option value="miribilla">Miribilla</option>
+                        <option value="las-cortes">Las Cortes</option>
+                        <option value="san-adrian">San Adrián</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="importe">Importe (€)</label>
+                    <input type="number" id="importe" name="importe" min="1">
+                </div>
 
                 <button type="submit">Continuar</button>
             </form>
