@@ -31,21 +31,94 @@
         <h2>Colonias felinas de Bilbao.</h2>
         <p>Consulta las colonias registradas y conoce el estado de los gatos que forman parte de cada una.</p>
 
-        <!-- Ficha de una colonia felina -->
-        <section>
-            <h2>Colonia de Deusto</h2>
+        <!--Índice de colonias con navegación interna-->
+        <section id="Lista-colonias">
+            <ol>
+                <li><a href="#miribilla">Miribilla</a></li>
+                <li><a href="#san-adrian">San Adrián</a></li>
+                <li><a href="#las-cortes">Las Cortes</a></li>
+            </ol>
+        </section>
+
+
+        <!-- Ficha de Miribilla -->
+        <section id="miribilla" class="ficha-colonia">
+            <h2>Colonia de los Guardianes de Miribilla</h2>
 
             <img src="https://www.corella.es/wp-content/uploads/2021/08/gatos-esterilizacion-1.jpg"
                 alt="Colonia felina de Deusto">
 
-            <p>Ubicación: Deusto</p>
-            <p>Número de gatos: 12</p>
-            <p>Gatos esterilizados: 9</p>
-            <p>Alimentación: seguimiento activo</p>
-            <p>Incidencias: ninguna</p>
-            <p>Adopciones:3</p>
+            <p><strong>Ubicación:</strong> Miribilla</p>
+            <p><strong>Número de gatos:</strong> 12</p>
+            <p><strong>Gatos esterilizados:</strong> 9</p>
+            <p><strong>Alimentación:</strong> seguimiento activo</p>
+            <p><strong>Incidencias:</strong> ninguna</p>
+
+            <h3>Adopciones</h3>
+            <p>3 gatos disponibles para adopción.</p>
+
             <img src="https://www.hortanoticias.com/wp-content/uploads/2017/10/colonia-de-gatos-de-Foios.jpg"
-                alt="Tres gatitos esperando ser adoptados.">
+                alt="Tres gatitos esperando ser adoptados">
+
+            <a href="#donacion">Ayudar a esta colonia</a>
+        </section>
+
+        <!-- Ficha de San Adrián -->
+        <section id="san-adrian" class="ficha-colonia">
+            <h2>Colonia de los Guardianes de San Adrián</h2>
+
+            <img src="https://www.corella.es/wp-content/uploads/2021/08/gatos-esterilizacion-1.jpg"
+                alt="Colonia felina de Deusto">
+
+            <p><strong>Ubicación:</strong> San Adrián</p>
+            <p><strong>Número de gatos:</strong> 33</p>
+            <p><strong>Gatos esterilizados:</strong> 15</p>
+            <p><strong>Alimentación:</strong> seguimiento activo</p>
+            <p><strong>Incidencias:</strong> ataque a la colonia por envenenamiento</p>
+
+            <h3>Adopciones</h3>
+            <p>0 gatos disponibles para adopción.</p>
+
+            <img src="https://www.hortanoticias.com/wp-content/uploads/2017/10/colonia-de-gatos-de-Foios.jpg"
+                alt="Tres gatitos esperando ser adoptados">
+
+            <a href="#donacion">Ayudar a esta colonia</a>
+        </section>
+
+        <!-- Ficha de Las Cortes -->
+        <section id="las-cortes" class="ficha-colonia">
+            <h2>Colonia de los Guardianes de Las Cortes</h2>
+
+            <img src="https://www.corella.es/wp-content/uploads/2021/08/gatos-esterilizacion-1.jpg"
+                alt="Colonia felina de Deusto">
+
+            <p><strong>Ubicación:</strong> Las Cortes</p>
+            <p><strong>Número de gatos:</strong> 25</p>
+            <p><strong>Gatos esterilizados:</strong> 7</p>
+            <p><strong>Alimentación:</strong> seguimiento activo</p>
+            <p><strong>Incidencias:</strong> falta de cuidadores</p>
+
+            <h3>Adopciones</h3>
+            <p>5 gatos disponibles para adopción.</p>
+
+            <img src="https://www.hortanoticias.com/wp-content/uploads/2017/10/colonia-de-gatos-de-Foios.jpg"
+                alt="Tres gatitos esperando ser adoptados">
+
+            <a href="#donacion">Ayudar a esta colonia</a>
+        </section>
+
+        <!-- Formulario que llevaría a la pasarela de pago -->
+        <section id="donacion">
+            <h2>Ayuda a una colonia</h2>
+            <form>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre">
+
+                <label for="importe">Importe (€)</label>
+                <input type="number" id="importe" name="importe" min="1">
+
+                <button type="submit">Continuar</button>
+            </form>
         </section>
 
     </main>
