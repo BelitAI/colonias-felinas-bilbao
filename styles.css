@@ -27,24 +27,57 @@ Poppins
 
 body {
     margin: 0;
-    padding: 16px;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
+}
+
+/*Contenedor común para mantener el contenido dentro del mimo padding*/
+
+.contenedor {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 16px;
 }
 
 h1,
 h2,
 h3 {
     font-weight: 700;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 26px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 17px;
 }
 
 p {
     font-weight: 400;
+    line-height: 1.6;
 }
 
 strong {
     font-weight: 600;
 }
+
+main {
+    max-width: 1100px;
+    margin: 24px auto 0;
+    padding: 0 16px;
+}
+
+section {
+    margin-bottom: 32px;
+}
+
+/*Cabecera*/
 
 header {
     background-color: var(--negro);
@@ -54,7 +87,6 @@ header {
 /* Navegación */
 
 header nav {
-    color: var(--gris-claro);
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -71,6 +103,21 @@ header nav a:hover {
     font-weight: 600;
 }
 
+/* Pie de página*/
+
+footer {
+    background-color: var(--negro);
+    color: var(--blanco);
+}
+
+footer a {
+color: nav(--blanco);
+text-decoration: none;
+}
+
+footer a:hover {
+    color: var(--amarillo);
+}
 
 /* Imágenes */
 
@@ -84,6 +131,14 @@ main img {
     margin: 0;
 }
 
+/*Fichas de colonias*/
+
+.ficha-colonia {
+    background-color: var(--gris-claro);
+    padding: 16px;
+    margin-bottom: 24px;
+    border-radius: 12px;
+}
 
 /* Formulario */
 
@@ -109,7 +164,21 @@ main img {
 /* Adaptación a pantallas grandes */
 
 @media (min-width: 768px) {
+
+    .contenedor {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    main {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
     header nav {
         flex-direction: row;
+    }
+
+    .ficha-colonia {
+        max-width: 800px;
     }
 }
