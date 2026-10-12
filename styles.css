@@ -1,14 +1,75 @@
 /* HOJA DE ESTILO */
 
+/*Sistema visual
+Paleta de color:
+
+negro:      #111111
+amarillo:   #f5c400
+blanco:     #ffffff
+gris claro: #f4f4f4*/
+
+/*Tipografía:
+
+Poppins
+400: texto
+600: destacados
+700: títulos
+*/
+
+:root {
+    --negro: #111111;
+    --amarillo: #f5c400;
+    --blanco: #ffffff;
+    --gris-claro: #f4f4f4;
+}
+
 /* Base Mobile First */
 
 body {
     margin: 0;
     padding: 16px;
     font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 700;
+}
+
+p {
+    font-weight: 400;
+}
+
+strong {
+    font-weight: 600;
+}
+
+header {
+    background-color: var(--negro);
+    color: var(--blanco);
 }
 
 /* Navegación */
+
+header nav {
+    color: var(--gris-claro);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: var(--blanco);
+    padding: 8px 0;
+}
+
+header nav a:hover {
+    color: var(--amarillo);
+    font-weight: 600;
+}
 
 
 /* Imágenes */
@@ -26,5 +87,29 @@ main img {
 
 /* Formulario */
 
+/* Botón fijo durante el scroll*/
+
+.boton-aviso {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    text-decoration: none;
+    background-color: var(--negro);
+    color: var(--blanco);
+    padding: 12px 18px;
+    border-radius: 24px;
+}
+
+.boton-aviso:hover {
+    transform: scale(1.05);
+    background-color: var(--amarillo);
+    color: var(--negro);
+}
 
 /* Adaptación a pantallas grandes */
+
+@media (min-width: 768px) {
+    header nav {
+        flex-direction: row;
+    }
+}
