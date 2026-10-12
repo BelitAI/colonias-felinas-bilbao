@@ -87,7 +87,7 @@ section {
 }
 
 main section {
-    scroll-margin-top: 180px;
+    scroll-margin-top: 240px;
 }
 
 /*Sección de donación*/
@@ -106,6 +106,30 @@ header {
     top: 0;
     background-color: var(--negro);
     color: var(--blanco);
+}
+
+.marca {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.logo-gato {
+    width: 70px;
+    height: auto;
+    animation: parpadeo 4s infinite;
+}
+
+@keyframes parpadeo {
+    0%,
+    92%,
+    100% {
+        transform: scaleY(1);
+    }
+    96% {
+        transform: scaleY(0.1);
+    }
 }
 
 /* Navegación */
@@ -178,7 +202,7 @@ main img {
     padding: 16px;
     margin-bottom: 24px;
     border-radius: 12px;
-    scroll-margin-top: 180px;
+    scroll-margin-top: 220px;
 }
 
 /* Formulario */
@@ -265,6 +289,10 @@ form button:hover {
 /* Adaptación a pantallas grandes */
 
 @media (min-width: 768px) {
+
+    .logo-gato {
+        width: 140px;
+    }
 
     h1 {
         font-size: 42px;
